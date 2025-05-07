@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,100 +8,87 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f4f4;
+      background-color: #f7f7f7;
       color: #333;
     }
     header {
-      background: #111;
-      color: #fff;
+      background-color: #000;
+      color: white;
       padding: 20px;
       text-align: center;
     }
     .container {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .images {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
     .images img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #111;
     }
     .price {
       font-size: 24px;
-      color: #0a7;
-      margin: 20px 0;
+      color: #0a0;
+      margin: 10px 0;
     }
-    .btns {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    .btns a {
-      background: #007bff;
+    .buy-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff6600;
       color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
     }
-    .btns a:hover {
-      background: #0056b3;
+    .buy-button:hover {
+      background-color: #e65c00;
     }
     footer {
       text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin: 40px 0 10px;
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Central Multimídia JR8 M7</h1>
-    <p>Alta tecnologia e entretenimento para o seu carro</p>
+    <p>Compatível com Android Auto, Apple Carplay e muito mais!</p>
   </header>
+
   <div class="container">
+    <div class="images">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_738850-MLB74816060153_032024-O.webp" alt="Central M7 Visão Frontal" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_612779-MLB74816060157_032024-O.webp" alt="Interface Tela M7" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_955446-MLB74816060163_032024-O.webp" alt="Acessórios da Central M7" />
+    </div>
+
     <h2>Descrição do Produto</h2>
     <p>
-      A Central Multimídia JR8 M7 é a escolha perfeita para quem busca modernidade, qualidade sonora e praticidade no carro. 
-      Compatível com diversos modelos de veículos, ela traz uma tela sensível ao toque, conexão Bluetooth, entrada USB, espelhamento de celular, câmera de ré e muito mais!
+      A Central Multimídia JR8 M7 é perfeita para transformar sua experiência no carro. Tela de 7" polegadas, compatibilidade com Apple Carplay, Android Auto, Bluetooth, entrada para câmera de ré, rádio FM, e muito mais.
     </p>
-    <ul>
-      <li>Modelo: JR8 M7</li>
-      <li>Tela de 7 polegadas touch screen</li>
-      <li>Bluetooth, USB, SD Card, Rádio FM</li>
-      <li>Compatível com Android e iOS</li>
-      <li>Espelhamento de tela via cabo</li>
-      <li>Entrada para câmera de ré</li>
-    </ul>
+    <p class="price">R$ 699,00 à vista</p>
 
-    <div class="price">Por apenas R$699,00</div>
-
-    <div class="btns">
-      <a href="https://go.tribopay.com.br/skudg" target="_blank">Comprar Agora</a>
-      <a href="https://wa.me/5519974237549" target="_blank">Fale no WhatsApp</a>
-    </div>
-
-    <div class="images">
-      <img src="https://i.postimg.cc/jS5PG7h5/multimidia1.jpg" alt="Central Multimídia 1">
-      <img src="https://i.postimg.cc/fyYjsfFg/multimidia2.jpg" alt="Central Multimídia 2">
-      <img src="https://i.postimg.cc/Fzwh4r4S/multimidia3.jpg" alt="Central Multimídia 3">
-    </div>
+    <a class="buy-button" href="https://wa.me/5519974237549?text=Olá,%20tenho%20interesse%20na%20central%20multimídia%20JR8%20M7!">Comprar agora via WhatsApp</a>
   </div>
+
   <footer>
-    &copy; 2025 Boyzinho | Todos os direitos reservados.
+    © 2025 - Loja Boyzinhoo | Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
